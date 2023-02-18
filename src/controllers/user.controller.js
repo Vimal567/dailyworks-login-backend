@@ -19,18 +19,7 @@ const register = async(req, res) => {
     }
 }
 
-const login = async(req, res) => {
-    try{
-        const payload = req.body;
-        const data = await userService.login(payload);
-        res.status(201).send(data);
-    }catch(error){
-        console.log(error);
-    }
-}
-
 module.exports = {
     getAllUsers,
     register,
-    login
 }
