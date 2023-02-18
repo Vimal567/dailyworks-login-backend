@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongo_url = "mongodb://127.0.0.1:27017/test";
+const mongo_url = "mongodb+srv://vimal:vimal@dailyworks-login-backen.drex5go.mongodb.net/?retryWrites=true&w=majority";
 const PORT = 8082;
 const routes = require("./routes/user.route");
 
