@@ -20,5 +20,3 @@ mongoose.connect(mongo_url).then(() => {
         console.log("connected to the port 8082");
     });
 });
-
-
