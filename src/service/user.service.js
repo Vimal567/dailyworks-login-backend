@@ -13,9 +13,14 @@ const register = async(payload) => {
     const data = await newUser.save();
     return data;
 }
+const login = async(payload) => {
+    const data = await getUser(payload.email);
+    return data;
+}
 
 module.exports = {
     getAllUsers,
     register,
-    getUser
+    getUser,
+    login
 }
